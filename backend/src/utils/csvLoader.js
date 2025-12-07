@@ -34,7 +34,6 @@ function normalizeHeader(header) {
   if (h.includes('salesperson id')) return 'salespersonId';
   if (h.includes('employee name')) return 'employeeName';
 
-  // Fallback: strip spaces and camel-ish case
   return header.replace(/\s+/g, '').replace(/^[A-Z]/, (c) => c.toLowerCase());
 }
 
